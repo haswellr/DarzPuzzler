@@ -1,0 +1,5 @@
+1
+Rocky Beginnings
+o,o,w,o,o,o
+o(e),o(b),w,o,s,o(x)
+o,o,w,o,o,o
