@@ -47,6 +47,18 @@ namespace Tiles
             Destroy(this);
         }
 
+        public virtual bool IsPassable(Tile moveOrigin, GameObject movingObject)
+        {
+            Doodad[] doodads = this.gameObject.GetComponentsInChildren<Doodad>();
+            foreach(Doodad doodad in doodads)
+            {
+                if(!doodad.IsTilePassable(moveOrigin, movingObject)){
+                    return false;
+                }
+            }
+            return true;
+        }
+
     }
 
 }

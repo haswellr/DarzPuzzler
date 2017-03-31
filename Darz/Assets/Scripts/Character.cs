@@ -9,11 +9,18 @@ public class Character : MonoBehaviour {
 
     public void MoveTo(Tile destination)
     {
-        transform.position = destination.transform.position;
-        OnEnterTile(destination);
+        if(destination.IsPassable(this.location, this.gameObject))
+        {
+            transform.position = destination.transform.position;
+            EnterTile(destination);
+        }
+        else
+        {
+            Debug.Log("Can't move there!");
+        }
     }
 
-    private void OnEnterTile(Tile newLocation)
+    private void EnterTile(Tile newLocation)
     {
         Tile[] tiles = newLocation.GetComponents<Tile>();
         foreach(Tile tile in tiles)

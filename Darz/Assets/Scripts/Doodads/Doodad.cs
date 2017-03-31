@@ -9,5 +9,10 @@ namespace Doodads
 
         public abstract void OnEnter(Tile origin, Character character);
 
+        public virtual bool IsTilePassable(Tile moveOrigin, GameObject movingObject)
+        {
+            return true;
+        }
+
     }
 }
