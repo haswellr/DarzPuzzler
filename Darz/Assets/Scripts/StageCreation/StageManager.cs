@@ -18,6 +18,7 @@ public class StageManager : MonoBehaviour {
     public Entrance entrance;
     public Exit exit;
     public Boulder boulder;
+    public FireFloor fireFloor;
 
     public Stage CurrentStage
     {
@@ -110,6 +111,7 @@ public class StageManager : MonoBehaviour {
         doodads["e"] = entrance;
         doodads["b"] = boulder;
         doodads["x"] = exit;
+        doodads["f"] = fireFloor;
     }
 
     //on program start
