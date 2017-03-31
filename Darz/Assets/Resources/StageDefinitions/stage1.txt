@@ -1,5 +1,5 @@
 1
 Rocky Beginnings
-o,o(f),w,o,o,o
+o,o,w,o,o,o
 o(e),o(b),w,o,s,o(x)
-k,o,w,o,o,o
+o,o,w,o,o,o

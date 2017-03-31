@@ -1,0 +1,7 @@
+6
+The Circuit
+w,w,w,w,w,w,w,w,w,w,w,w,w,w
+w,o(e),o(b),o,w,o,k,o,w,o,o,o,k,w
+w,s,w,w,w,k,o(b),o,w,o(b),o(b),o(b),o(b),w
+w,o(x),o,w,w,o,o,o,w,o,o,o,k,w
+w,w,w,w,w,w,w,w,w,w,w,w,w,w

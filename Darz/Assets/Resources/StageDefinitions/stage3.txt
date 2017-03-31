@@ -1,5 +1,9 @@
 3
-On Shaky Ground
-o,o(b),w,o,o,o,w,o
-o(e),o(b),w,o,o,w,w,o
-o,o,w,o,o,w,w,o(x)
+Leapfrog
+w,w,w,w,o,o,o,w,w
+w,w,w,w,o,o,o,w,w
+o,o,o(b),w,o,o,w,w,w
+o(e),o(b),o(b),w,o,o,w,w,o(x)
+o,o,o(b),w,o,o,w,w,w
+w,w,w,w,o,o,o,w,w
+w,w,w,w,o,o,o,w,w

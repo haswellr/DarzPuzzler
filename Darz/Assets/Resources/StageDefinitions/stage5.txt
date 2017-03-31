@@ -1,0 +1,9 @@
+5
+On Shaky Ground
+w,w,w,o,w,w,w
+w,w,o,o,o,w,o(x)
+w,o(e),o(b),o,w,w,w
+w,w,o,w,w,w,w
+w,w,w,o,k,k,w
+w,w,w,k,o(b),k,w
+w,w,w,k,k,k,w
