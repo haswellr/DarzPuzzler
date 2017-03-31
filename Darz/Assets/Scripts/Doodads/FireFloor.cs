@@ -12,14 +12,6 @@ namespace Doodads
         private ParticleSystem fireEmitter = null;
         private bool fireOn = false;
 
-        public override void OnEnter(Tile origin, Character character)
-        {
-            if (fireOn)
-            {
-                character.Kill();
-            }
-        }
-
         private void ToggleFire()
         {
             fireOn = !fireOn;
@@ -52,6 +44,19 @@ namespace Doodads
         private void Start()
         {
             InvokeRepeating("ToggleFire", 3f, 3f);
+        }
+
+        public override void OnEnter(Tile origin, Character character)
+        {
+            if (fireOn)
+            {
+                character.Kill();
+            }
+        }
+
+        public override void OnExit(Tile destination, Character character)
+        {
+
         }
     }
 }

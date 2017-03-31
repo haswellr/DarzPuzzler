@@ -26,5 +26,10 @@ namespace Tiles
             }
         }
 
+        public override void OnExit(Tile destination, Character character)
+        {
+
+        }
+
     }
 }

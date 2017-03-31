@@ -13,5 +13,10 @@ namespace Doodads
             Stage stage = StageManager.instance.CurrentStage;
             stage.Win();
         }
+
+        public override void OnExit(Tile destination, Character character)
+        {
+
+        }
     }
 }

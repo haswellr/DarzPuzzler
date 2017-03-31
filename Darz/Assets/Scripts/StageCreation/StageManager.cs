@@ -14,6 +14,7 @@ public class StageManager : MonoBehaviour {
     public Dirt dirt;
     public Water water;
     public Spikes spikes;
+    public WeakGround weakGround;
     //Doodads
     public Entrance entrance;
     public Exit exit;
@@ -100,6 +101,7 @@ public class StageManager : MonoBehaviour {
         tiles["o"] = dirt;
         tiles["w"] = water;
         tiles["s"] = spikes;
+        tiles["k"] = weakGround;
     }
 
     /// <summary>

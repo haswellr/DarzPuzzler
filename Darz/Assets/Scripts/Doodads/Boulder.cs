@@ -41,16 +41,6 @@ namespace Doodads
             return (nextTile != null && nextTile.IsPassable(pushOrigin, this.gameObject));
         }
 
-        public override void OnEnter(Tile origin, Character character)
-        {
-            Tile nextTile = GetTileTargetOfPush(origin);
-            if(CanBePushed(origin))
-            {
-                //Push boulder
-                nextTile.AddDoodad(this);
-            }
-        }
-
         public override bool IsTilePassable(Tile moveOrigin, GameObject movingObject)
         {
             if(movingObject.GetComponent<Boulder>() != null)
@@ -67,6 +57,21 @@ namespace Doodads
             {
                 return true;
             }
+        }
+
+        public override void OnEnter(Tile origin, Character character)
+        {
+            Tile nextTile = GetTileTargetOfPush(origin);
+            if (CanBePushed(origin))
+            {
+                //Push boulder
+                nextTile.AddDoodad(this);
+            }
+        }
+
+        public override void OnExit(Tile destination, Character character)
+        {
+            
         }
     }
 }

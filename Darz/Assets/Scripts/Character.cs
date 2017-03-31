@@ -22,6 +22,21 @@ public class Character : MonoBehaviour {
 
     private void EnterTile(Tile newLocation)
     {
+        if(this.location != null)
+        {
+            //Exit current tile, triggering 'OnExit'
+            Tile[] oldTiles = this.location.GetComponents<Tile>();
+            foreach (Tile tile in oldTiles)
+            {
+                tile.OnExit(newLocation, this);
+            }
+            Doodad[] oldDoodads = this.location.GetComponentsInChildren<Doodad>();
+            foreach (Doodad doodad in oldDoodads)
+            {
+                doodad.OnExit(newLocation, this);
+            }
+        }
+        //Enter new tile, triggering 'OnEnter'
         Tile[] tiles = newLocation.GetComponents<Tile>();
         foreach(Tile tile in tiles)
         {

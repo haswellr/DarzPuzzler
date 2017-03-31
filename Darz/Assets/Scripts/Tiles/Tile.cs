@@ -10,6 +10,7 @@ namespace Tiles
         public Tile up, right, left, down;
 
         public abstract void OnEnter(Tile origin, Character character);
+        public abstract void OnExit(Tile destination, Character character);
 
         public virtual void AddDoodad(Doodad doodad)
         {

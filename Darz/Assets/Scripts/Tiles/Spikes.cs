@@ -12,5 +12,10 @@ namespace Tiles
             character.Kill();
         }
 
+        public override void OnExit(Tile destination, Character character)
+        {
+
+        }
+
     }
 }
