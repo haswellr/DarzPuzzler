@@ -122,9 +122,6 @@ public class StageManager : MonoBehaviour {
         LoadStageDefinitions();
         InitializeTiles();
         InitializeDoodads();
-
-        //TEMP FOR TESTING
-        LoadStage(0);
     }
 
     //Runs before start
