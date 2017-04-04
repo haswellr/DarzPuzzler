@@ -45,7 +45,7 @@ namespace Tiles
             {
                 tile.left.right = tile;
             }
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 
         public virtual bool IsPassable(Tile moveOrigin, GameObject movingObject)
