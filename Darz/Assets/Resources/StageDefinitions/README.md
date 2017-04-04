@@ -26,6 +26,7 @@ Format is **TILE_NAME[TILE_IDENTIFIER]**: Description of what the tile does in t
 * **Dirt[o]**: The most basic, harmless tile. No effect.
 * **Water[w]**: Causes death if moved into. If a boulder is pushed into a water tile, the water tile turns into Dirty Water, which shares the same behavior as Dirt but has a different appearance.
 * **Spikes[s]**: Causes death if moved into.
+* **Weak Ground[k]**: Is destroyed after the character moves over it. This means the character can only move through this tile once.
 
 Example:
 2
@@ -49,6 +50,9 @@ Format is **DOODAD_NAME[DOODAD_IDENTIFIER]**: Description of what the doodad doe
 * **Entrance[e]**: The tile where the character will be located at the beginning of a stage. There must be exactly one entrance per stage.
 * **Boulder[b]**: A pushable object. When a character moves onto a tile with a boulder, the boulder is pushed off into the next tile. A boulder may be pushed into water to turn it into dirt.
 * **Exit[x]**: If the character reaches this tile, they have completed the stage.
+* **Fire Floor[f]**: This tile has fire spouts which toggle on and off every X seconds. When on, entering the tile will kill the character. When off, it will have no effect.
+* **Gate[g[COLOR]]**: This tile is impassable unless the character possesses the matching key. Specify the color in brackets, like g[Red].
+* **Key[y[COLOR]]**: This tile holds a key of a certain color which the character can pick up and carry. Specify the color in brackets as with gates.
 
 Example:
 2

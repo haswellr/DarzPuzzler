@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using Tiles;
 using Doodads;
+using Items;
 
 public class Character : MonoBehaviour {
 
     public Tile location;
+    [HideInInspector]
+    public List<Items.Key> keys = new List<Items.Key>();
 
     public void MoveTo(Tile destination)
     {
@@ -59,7 +63,7 @@ public class Character : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -92,5 +96,17 @@ public class Character : MonoBehaviour {
                 this.MoveTo(this.location.left);
             }
         }
+    }
+
+    private void OnGUI()
+    {
+        float height = 35 + 25 * keys.Count;
+        GUILayout.BeginArea(new Rect(Screen.width - 50, Screen.height - height, 50, height));
+        GUILayout.Label("KEYS:");
+        for (int i = 0; i < keys.Count; i++)
+        {
+            GUILayout.Label(keys[i].Color);
+        }
+        GUILayout.EndArea();
     }
 }

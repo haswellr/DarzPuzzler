@@ -20,6 +20,10 @@ public class StageManager : MonoBehaviour {
     public Exit exit;
     public Boulder boulder;
     public FireFloor fireFloor;
+    public Gate gatePink;
+    public Gate gateTeal;
+    public Key keyPink;
+    public Key keyTeal;
 
     public Stage CurrentStage
     {
@@ -114,6 +118,10 @@ public class StageManager : MonoBehaviour {
         doodads["b"] = boulder;
         doodads["x"] = exit;
         doodads["f"] = fireFloor;
+        doodads["g[Pink]"] = gatePink;
+        doodads["g[Teal]"] = gateTeal;
+        doodads["y[Pink]"] = keyPink;
+        doodads["y[Teal]"] = keyTeal;
     }
 
     //on program start

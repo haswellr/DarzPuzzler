@@ -92,6 +92,7 @@ public class StageCreator {
                     //Debug.Log("TileStr: " + tileStr);
                 }
                 //Create Tile
+                Debug.Log("tile str: " + tileStr);
                 Tile tile = GameObject.Instantiate(tiles[tileStr]);
                 tile.transform.position = new Vector3(x, 0, z);
                 nextX = tile.transform.position.x + tile.GetComponent<Renderer>().bounds.size.x;
