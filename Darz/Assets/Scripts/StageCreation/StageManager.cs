@@ -22,8 +22,12 @@ public class StageManager : MonoBehaviour {
     public FireFloor fireFloor;
     public Gate gatePink;
     public Gate gateTeal;
+    public Gate gateYellow;
+    public Gate gateNavy;
     public Key keyPink;
     public Key keyTeal;
+    public Key keyYellow;
+    public Key keyNavy;
 
     public Stage CurrentStage
     {
