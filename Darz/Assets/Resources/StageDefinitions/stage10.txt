@@ -1,0 +1,13 @@
+10
+The End of the Beginning
+w,o,o,o,o,o,o,o,o,o,o,o,w
+o,w,w,w,w,o,o(b),o(b),w,w,w,w,o
+o,w,o(y[Teal]),o,w,o,o(b),o,w,o,o,w,o
+o,w,o,o,w,o,o,o,w,o,o,w,o
+o,w,w,w,w,w,w,w,w,w,w,w,o
+o,o(b),o,w,w,o,o(e),o,w,w,o,o,o
+o,o(b),o,w,w,o(b),o(b),o,w,w,o,o(b),o
+o,o,o,w,w,o,o(b),o,w,w,o,o,o
+w,w,w,w,w,w,w,w,w,w,w,w,w
+s,o(g[Pink]),s,w,w,s,o(g[Yellow]),s,w,w,s,o(g[Teal]),s
+s,o(y[Yellow]),s,w,w,s,o(x),s,w,w,s,o(y[Pink]),s

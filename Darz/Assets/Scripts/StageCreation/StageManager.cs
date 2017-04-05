@@ -124,8 +124,12 @@ public class StageManager : MonoBehaviour {
         doodads["f"] = fireFloor;
         doodads["g[Pink]"] = gatePink;
         doodads["g[Teal]"] = gateTeal;
+        doodads["g[Yellow]"] = gateYellow;
+        doodads["g[Navy]"] = gateNavy;
         doodads["y[Pink]"] = keyPink;
         doodads["y[Teal]"] = keyTeal;
+        doodads["y[Yellow]"] = keyYellow;
+        doodads["y[Navy]"] = keyNavy;
     }
 
     //on program start

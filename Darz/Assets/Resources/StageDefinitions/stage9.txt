@@ -1,0 +1,8 @@
+9
+High Security
+o,o(g[Teal]),o,k,o,w,o(y[Teal])
+o(x),s,o(e),s,o,w,s
+w,w,o,s,o(b),o,o
+w,w,o,k,o,w,o
+w,w,o,w,w,w,o
+w,w,o,o,o,o,o
